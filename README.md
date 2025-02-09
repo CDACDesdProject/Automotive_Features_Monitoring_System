@@ -33,8 +33,8 @@ Automotive_Features_Monitoring_System/
 
 ## Communication Protocols & Wiring Details
 - **I2C**: BMP280 → First STM32 Board  
-  - SDA (BMP280) → PB7 (STM32)
-  - SCL (BMP280) → PB6 (STM32)
+  - SDA (BMP280) → PB11 (STM32)
+  - SCL (BMP280) → PB10 (STM32)
   - VCC → 3.3V, GND → GND
 - **CAN**: First STM32 → Second STM32  
   - CAN_H → CAN_H
@@ -47,7 +47,7 @@ Automotive_Features_Monitoring_System/
 - **MQTT (via WiFi)**: ESP32 → AWS IoT Core  
   - Requires WiFi credentials and AWS IoT Core setup
 - **OLED (I2C)**: OLED Display → STM32  
-  - SDA → PB9, SCL → PB8
+  - SDA → PC9, SCL → PA8
 
 ## Code Details
 ### 1. BMP280 Sensor Interfacing (I2C)
